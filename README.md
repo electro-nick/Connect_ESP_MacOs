@@ -45,5 +45,5 @@ _Айпи мы прописывали в arduino IDE. Он статичен._
 
 * `self.udp?.send(key: "getPowerState", value: "", onError: { err in print(err) })`
 
-Далее ловим ответ в конструкторе. [Смотреть пример](https://github.com/electro-nick/Connect_ESP_MacOs/blob/master/SketchApp/ViewController.swift). 25 строка!
+Далее ловим ответ в конструкторе и меняем состояние вьюхи. [Смотреть пример](https://github.com/electro-nick/Connect_ESP_MacOs/blob/master/SketchApp/ViewController.swift). 25 строка!
 
