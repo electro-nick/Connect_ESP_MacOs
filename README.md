@@ -1,6 +1,6 @@
 # Connect_ESP_MacOs
 
-Автор: **[YouTube Канал](https://www.youtube.com/channel/UCM-XygZwEYf7gJTsNsHrFew)**, **[Группа ВК](https://vk.com/public_electro_nick)**, **[Сайт с проектами](http://electro-nick.ru)**
+Ссылки: **[YouTube Канал](https://www.youtube.com/channel/UCM-XygZwEYf7gJTsNsHrFew)**, **[Группа ВК](https://vk.com/public_electro_nick)**, **[Сайт с проектами](http://electro-nick.ru)**
 
 ![](https://github.com/electro-nick/Connect_ESP_MacOs/blob/master/Images/app.png)
 
