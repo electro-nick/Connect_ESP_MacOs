@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7F46287246C1DC10067C32E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F46286246C1DC10067C32E /* AppDelegate.swift */; };
+		E7F46289246C1DC10067C32E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F46288246C1DC10067C32E /* ViewController.swift */; };
+		E7F4628B246C1DC50067C32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F4628A246C1DC50067C32E /* Assets.xcassets */; };
+		E7F4628E246C1DC50067C32E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F4628C246C1DC50067C32E /* Main.storyboard */; };
+		E7F4629A246C1DC50067C32E /* SketchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F46299246C1DC50067C32E /* SketchAppTests.swift */; };
+		E7F462A5246C1DC60067C32E /* SketchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F462A4246C1DC60067C32E /* SketchAppUITests.swift */; };
+		E7F462B3246C1F640067C32E /* UDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F462B2246C1F640067C32E /* UDP.swift */; };
+		E7F462B5246C2FFF0067C32E /* StateServerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F462B4246C2FFF0067C32E /* StateServerHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7F46296246C1DC50067C32E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7F4627B246C1DC10067C32E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7F46282246C1DC10067C32E;
+			remoteInfo = SketchApp;
+		};
+		E7F462A1246C1DC60067C32E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7F4627B246C1DC10067C32E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7F46282246C1DC10067C32E;
+			remoteInfo = SketchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E7F46283246C1DC10067C32E /* SketchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F46286246C1DC10067C32E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E7F46288246C1DC10067C32E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7F4628A246C1DC50067C32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7F4628D246C1DC50067C32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7F4628F246C1DC50067C32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F46290246C1DC50067C32E /* SketchApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SketchApp.entitlements; sourceTree = "<group>"; };
+		E7F46295246C1DC50067C32E /* SketchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F46299246C1DC50067C32E /* SketchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchAppTests.swift; sourceTree = "<group>"; };
+		E7F4629B246C1DC50067C32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F462A0246C1DC60067C32E /* SketchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F462A4246C1DC60067C32E /* SketchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchAppUITests.swift; sourceTree = "<group>"; };
+		E7F462A6246C1DC60067C32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F462B2246C1F640067C32E /* UDP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDP.swift; sourceTree = "<group>"; };
+		E7F462B4246C2FFF0067C32E /* StateServerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateServerHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7F46280246C1DC10067C32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F46292246C1DC50067C32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F4629D246C1DC60067C32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7F4627A246C1DC10067C32E = {
+			isa = PBXGroup;
+			children = (
+				E7F46285246C1DC10067C32E /* SketchApp */,
+				E7F46298246C1DC50067C32E /* SketchAppTests */,
+				E7F462A3246C1DC60067C32E /* SketchAppUITests */,
+				E7F46284246C1DC10067C32E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7F46284246C1DC10067C32E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7F46283246C1DC10067C32E /* SketchApp.app */,
+				E7F46295246C1DC50067C32E /* SketchAppTests.xctest */,
+				E7F462A0246C1DC60067C32E /* SketchAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7F46285246C1DC10067C32E /* SketchApp */ = {
+			isa = PBXGroup;
+			children = (
+				E7F46286246C1DC10067C32E /* AppDelegate.swift */,
+				E7F4628A246C1DC50067C32E /* Assets.xcassets */,
+				E7F4628C246C1DC50067C32E /* Main.storyboard */,
+				E7F4628F246C1DC50067C32E /* Info.plist */,
+				E7F46290246C1DC50067C32E /* SketchApp.entitlements */,
+				E7F46288246C1DC10067C32E /* ViewController.swift */,
+				E7F462B2246C1F640067C32E /* UDP.swift */,
+				E7F462B4246C2FFF0067C32E /* StateServerHelper.swift */,
+			);
+			path = SketchApp;
+			sourceTree = "<group>";
+		};
+		E7F46298246C1DC50067C32E /* SketchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7F46299246C1DC50067C32E /* SketchAppTests.swift */,
+				E7F4629B246C1DC50067C32E /* Info.plist */,
+			);
+			path = SketchAppTests;
+			sourceTree = "<group>";
+		};
+		E7F462A3246C1DC60067C32E /* SketchAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E7F462A4246C1DC60067C32E /* SketchAppUITests.swift */,
+				E7F462A6246C1DC60067C32E /* Info.plist */,
+			);
+			path = SketchAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7F46282246C1DC10067C32E /* SketchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7F462A9246C1DC60067C32E /* Build configuration list for PBXNativeTarget "SketchApp" */;
+			buildPhases = (
+				E7F4627F246C1DC10067C32E /* Sources */,
+				E7F46280246C1DC10067C32E /* Frameworks */,
+				E7F46281246C1DC10067C32E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SketchApp;
+			productName = SketchApp;
+			productReference = E7F46283246C1DC10067C32E /* SketchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7F46294246C1DC50067C32E /* SketchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7F462AC246C1DC60067C32E /* Build configuration list for PBXNativeTarget "SketchAppTests" */;
+			buildPhases = (
+				E7F46291246C1DC50067C32E /* Sources */,
+				E7F46292246C1DC50067C32E /* Frameworks */,
+				E7F46293246C1DC50067C32E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7F46297246C1DC50067C32E /* PBXTargetDependency */,
+			);
+			name = SketchAppTests;
+			productName = SketchAppTests;
+			productReference = E7F46295246C1DC50067C32E /* SketchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7F4629F246C1DC60067C32E /* SketchAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7F462AF246C1DC60067C32E /* Build configuration list for PBXNativeTarget "SketchAppUITests" */;
+			buildPhases = (
+				E7F4629C246C1DC60067C32E /* Sources */,
+				E7F4629D246C1DC60067C32E /* Frameworks */,
+				E7F4629E246C1DC60067C32E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7F462A2246C1DC60067C32E /* PBXTargetDependency */,
+			);
+			name = SketchAppUITests;
+			productName = SketchAppUITests;
+			productReference = E7F462A0246C1DC60067C32E /* SketchAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7F4627B246C1DC10067C32E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Havil;
+				TargetAttributes = {
+					E7F46282246C1DC10067C32E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E7F46294246C1DC50067C32E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E7F46282246C1DC10067C32E;
+					};
+					E7F4629F246C1DC60067C32E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E7F46282246C1DC10067C32E;
+					};
+				};
+			};
+			buildConfigurationList = E7F4627E246C1DC10067C32E /* Build configuration list for PBXProject "SketchApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7F4627A246C1DC10067C32E;
+			productRefGroup = E7F46284246C1DC10067C32E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7F46282246C1DC10067C32E /* SketchApp */,
+				E7F46294246C1DC50067C32E /* SketchAppTests */,
+				E7F4629F246C1DC60067C32E /* SketchAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7F46281246C1DC10067C32E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F4628B246C1DC50067C32E /* Assets.xcassets in Resources */,
+				E7F4628E246C1DC50067C32E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F46293246C1DC50067C32E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F4629E246C1DC60067C32E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7F4627F246C1DC10067C32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F462B5246C2FFF0067C32E /* StateServerHelper.swift in Sources */,
+				E7F46289246C1DC10067C32E /* ViewController.swift in Sources */,
+				E7F46287246C1DC10067C32E /* AppDelegate.swift in Sources */,
+				E7F462B3246C1F640067C32E /* UDP.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F46291246C1DC50067C32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F4629A246C1DC50067C32E /* SketchAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F4629C246C1DC60067C32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F462A5246C1DC60067C32E /* SketchAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7F46297246C1DC50067C32E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7F46282246C1DC10067C32E /* SketchApp */;
+			targetProxy = E7F46296246C1DC50067C32E /* PBXContainerItemProxy */;
+		};
+		E7F462A2246C1DC60067C32E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7F46282246C1DC10067C32E /* SketchApp */;
+			targetProxy = E7F462A1246C1DC60067C32E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7F4628C246C1DC50067C32E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7F4628D246C1DC50067C32E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7F462A7246C1DC60067C32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E7F462A8246C1DC60067C32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E7F462AA246C1DC60067C32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SketchApp/SketchApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BVKV48TNW2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SketchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.havilcorp.SketchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E7F462AB246C1DC60067C32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SketchApp/SketchApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BVKV48TNW2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SketchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.havilcorp.SketchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E7F462AD246C1DC60067C32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BVKV48TNW2;
+				INFOPLIST_FILE = SketchAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.havilcorp.SketchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SketchApp.app/Contents/MacOS/SketchApp";
+			};
+			name = Debug;
+		};
+		E7F462AE246C1DC60067C32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BVKV48TNW2;
+				INFOPLIST_FILE = SketchAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.havilcorp.SketchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SketchApp.app/Contents/MacOS/SketchApp";
+			};
+			name = Release;
+		};
+		E7F462B0246C1DC60067C32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BVKV48TNW2;
+				INFOPLIST_FILE = SketchAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.havilcorp.SketchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SketchApp;
+			};
+			name = Debug;
+		};
+		E7F462B1246C1DC60067C32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BVKV48TNW2;
+				INFOPLIST_FILE = SketchAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.havilcorp.SketchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SketchApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7F4627E246C1DC10067C32E /* Build configuration list for PBXProject "SketchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7F462A7246C1DC60067C32E /* Debug */,
+				E7F462A8246C1DC60067C32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7F462A9246C1DC60067C32E /* Build configuration list for PBXNativeTarget "SketchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7F462AA246C1DC60067C32E /* Debug */,
+				E7F462AB246C1DC60067C32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7F462AC246C1DC60067C32E /* Build configuration list for PBXNativeTarget "SketchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7F462AD246C1DC60067C32E /* Debug */,
+				E7F462AE246C1DC60067C32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7F462AF246C1DC60067C32E /* Build configuration list for PBXNativeTarget "SketchAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7F462B0246C1DC60067C32E /* Debug */,
+				E7F462B1246C1DC60067C32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7F4627B246C1DC10067C32E /* Project object */;
+}
